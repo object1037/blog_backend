@@ -11,7 +11,13 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  adapter: mysql2
+  database: blog
+  username: <%= ENV['DB_USERNAME'] %>
+  host: <%= ENV['DB_ACCESS_HOST_URL'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  ssl_mode: :verify_identity
+  sslca: "/etc/ssl/cert.pem"
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
