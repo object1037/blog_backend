@@ -49,3 +49,4 @@ group :development do
 end
 
 gem "mysql2"
+gem 'graphql'

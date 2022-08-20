@@ -10,15 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_20_074804) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_20_102615) do
   create_table "posts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title", null: false
-    t.string "description", null: false
     t.string "date", null: false
     t.string "og_img_url"
     t.boolean "draft"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "description", null: false
+    t.text "content", null: false
   end
 
 end
