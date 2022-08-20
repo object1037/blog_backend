@@ -15,6 +15,8 @@ development:
   database: blog
   username: <%= ENV['DB_USERNAME'] %>
   host: <%= ENV['DB_ACCESS_HOST_URL'] %>
+  #host: 127.0.0.1
+  #port: 3309
   password: <%= ENV['DB_PASSWORD'] %>
   ssl_mode: :verify_identity
   sslca: "/etc/ssl/cert.pem"
