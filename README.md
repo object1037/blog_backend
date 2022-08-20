@@ -1,24 +1,7 @@
-# README
+# blog_backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend of my blog([https://blog.object1037.dev](https://blog.object1037.dev))
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby on Rails(API mode)
+- GraphQL
+- Planetscale
