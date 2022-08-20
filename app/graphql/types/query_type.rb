@@ -11,8 +11,16 @@ module Types
       argument :id, ID, required: true
     end
 
+    field :posts, [Types::PostType], null: false do
+      description 'Find all posts'
+    end
+
     def post(id:)
       Post.find(id)
+    end
+
+    def posts()
+      Post.all
     end
   end
 end
